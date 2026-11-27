@@ -35,20 +35,37 @@ This sample demonstrates how to create a Syncfusion [Blazor TreeMap](https://www
 
 1. Open the repository folder in Visual Studio Code.
 2. Open the integrated terminal.
-3. Navigate to the startup project directory for the hosted application.
+3. Navigate to the `Server` project directory:
+
+```bash
+cd Server 
+```
+
+4. Restore project dependencies:
 
 ```bash
 dotnet restore
+```
+
+5. Run the application:
+
+```bash
 dotnet run
 ```
 
-4. Open the local URL displayed in the terminal after the application starts.
+6. Open the local URL displayed in the terminal after the application starts.
 
 ## Project Structure
 
-`CreatingTreeMapSample.sln` — Visual Studio solution file for the Blazor WebAssembly TreeMap sample.
+- `GettingStarted.sln` — Visual Studio solution file containing the sample projects.
 
-`Client/Pages/Index.razor` — Main sample page that configures and renders the `SfTreeMap` component, defines the `Country` model, and provides the GDP data source.
+- `Client/` — Contains the Blazor WebAssembly client application.
+
+- `Client/Pages/Index.razor` — Main sample page that configures and renders the `SfTreeMap` component, defines the `Country` model, and provides the GDP data source.
+  
+- `Server/` — Hosts and serves the Blazor WebAssembly application.
+
+- `Shared/` — Contains shared models and resources used by both the Client and Server projects.
 
 ## Support and Feedback
 
